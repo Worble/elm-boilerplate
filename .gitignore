@@ -2,6 +2,9 @@
 dist/*
 !dist/index.html
 
+# TS generated Files
+*.d.ts
+
 # Dependencies
 node_modules/
 elm-stuff/
