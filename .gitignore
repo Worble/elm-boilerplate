@@ -1,6 +1,5 @@
 # Compiled files
 dist/*
-!dist/index.html
 
 # TS generated Files
 *.d.ts
