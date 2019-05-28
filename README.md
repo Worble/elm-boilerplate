@@ -13,7 +13,7 @@ All distribution files can be found under `/dist`
 # Building from Source
 
 * When running `git clone`, pass `--recurse-submodules` to ensure the loader is also pulled. If the project is already cloned, alternatively run `git submodule init` and `git submodule update` to pull the loader
-  * The loader being pulled is the same as the loader at https://github.com/elm-community/elm-webpack-loader, with the small exception that it uses uglifyjs with the settings described [here](https://guide.elm-lang.org/optimization/asset_size.html) when run for production. This can give some performance benefits, especially for larger code bases. If for whatever reason you don't want this, or it doesn't work, you can simply add the original elm webpack loader with `yarn add elm-webpack-loader --dev` and update the webpack files to use it: `loader: 'elm-webpack-loader'`
+  * The loader being pulled is the same as [elm-webpack-loader](https://github.com/elm-community/elm-webpack-loader), with the small exception that it uses uglifyjs with the settings described [here](https://guide.elm-lang.org/optimization/asset_size.html) when run for production. This can give some performance benefits, especially for larger code bases. If for whatever reason you don't want this, or it doesn't work, you can simply add the original elm webpack loader with `yarn add elm-webpack-loader --dev` and update the webpack files to use it: `loader: 'elm-webpack-loader'`
 * Run `npm i` or `yarn` in the `loaders/elm-webpack-loader` folder
 * Run `npm i` or `yarn` in the root folder
 * Run any of the following in the root folder (feel free to substitute `yarn` for `npm run`)
